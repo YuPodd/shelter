@@ -83,11 +83,16 @@ p {
   cursor: pointer;
   background-color: #fddcc4;
 }
+a h4:hover{
+    cursor: pointer;
+    color: #fddcc4;
+}
 .wrapper-footer h4,
 a {
   text-decoration: none;
   color: #f1cdb3;
 }
+
 /* HEADER */
 
 .wrapper-nav {
@@ -333,5 +338,44 @@ p.italic {
 }
 
 .space-top {
-  margin-top: 20px;
+  margin-top: 5%;
+}
+
+/* FOOTER */
+
+.wrapper-footer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.wrapper-footer h3 {
+   font-size: 35px;
+   line-height: 130%;
+   letter-spacing: 0.06em;
+   color: #FFFFFF;
+}
+
+.wrapper-footer h4,
+a {
+   text-decoration: none;
+   color: #F1CDB3;
+}
+
+.contacts-footer {
+   display: flex;
+   width: 65%;
+}
+
+.contacts-footer h4 {
+   display: inline-block;
+   font-size: 20px;
+}
+
+.contacts-footer img {
+   margin-right: 10px;
+}
+.img-footer{
+    padding-top: 2%;
 }
