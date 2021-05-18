@@ -9,7 +9,7 @@ body {
   font-weight: 400;
 }
 header {
-  height: 908px;
+  max-height: 912px;
 }
 main {
   width: 100%;
@@ -23,7 +23,8 @@ main {
 .donation {
   padding: 5% 0;
 }
-.pets, .donation {
+.pets,
+.donation {
   background: #f6f6f6;
 }
 
@@ -66,12 +67,14 @@ p {
   font-size: 15px;
   line-height: 160%;
 }
-
+.image-donation img{
+    width: 100%;
+}
 .btn {
   width: fit-content;
   border-radius: 100px;
   color: black;
-  padding: 10px 35px;
+  padding: 2% 5%;
   font-size: 17px;
   letter-spacing: 1.02px;
   font-family: Georgia, serif;
@@ -83,9 +86,9 @@ p {
   cursor: pointer;
   background-color: #fddcc4;
 }
-a h4:hover{
-    cursor: pointer;
-    color: #fddcc4;
+a h4:hover {
+  cursor: pointer;
+  color: #fddcc4;
 }
 .wrapper-footer h4,
 a {
@@ -97,6 +100,9 @@ a {
 
 .wrapper-nav {
   justify-content: space-between;
+}
+.wrapper-header {
+  justify-content: center;
 }
 .logo-title {
   color: #f1cdb3;
@@ -148,27 +154,22 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
 }
 .left-column h2 {
   line-height: 130%;
   max-width: 310px;
 }
-.right-column {
-  display: inline-block;
-  float: right;
-}
+
 p.left-text {
   color: #cdcdcd;
-  width: 460px;
   margin-top: 42px;
   margin-bottom: 41px;
   line-height: 160%;
 }
 img#dog-header {
   margin-top: 64.5px;
-  height: 723px;
-  width: 698px;
-  border-radius: 0px;
+  max-width: 100%;
 }
 
 /* SECTION ABOUT */
@@ -179,15 +180,13 @@ img#dog-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 50%;
 }
-.about-text-main {
-  width: 430px;
-}
+
 .about-text-main p {
   margin-top: 25px;
 }
 .about-text h3 {
-  width: 370px;
   font-size: 35px;
   letter-spacing: 2.1px;
 }
@@ -211,7 +210,8 @@ img#dog-header {
 .pets-slider {
   display: flex;
   justify-content: space-between;
-  margin-top: 65px;
+  margin-top: 7%;
+  flex-wrap: wrap;
 }
 
 .arrow {
@@ -237,6 +237,9 @@ img#dog-header {
   background: #fafafa;
   border-radius: 9px;
   padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .pets-galery:hover {
   cursor: pointer;
@@ -302,6 +305,7 @@ button.learn_more {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .text-donation {
@@ -344,38 +348,93 @@ p.italic {
 /* FOOTER */
 
 .wrapper-footer {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .wrapper-footer h3 {
-   font-size: 35px;
-   line-height: 130%;
-   letter-spacing: 0.06em;
-   color: #FFFFFF;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #ffffff;
 }
 
 .wrapper-footer h4,
 a {
-   text-decoration: none;
-   color: #F1CDB3;
+  text-decoration: none;
+  color: #f1cdb3;
 }
 
 .contacts-footer {
-   display: flex;
-   width: 65%;
+  display: flex;
+  width: 65%;
 }
 
 .contacts-footer h4 {
-   display: inline-block;
-   font-size: 20px;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .contacts-footer img {
-   margin-right: 10px;
+  margin-right: 10px;
 }
-.img-footer{
-    padding-top: 2%;
+.img-footer {
+  padding-top: 2%;
+}
+@media (max-width: 1200px) {
+  .wrapper-header,
+  .wrapper-nav {
+    margin: 0 5%;
+  }
+}
+@media (max-width: 960px) {
+  .pets-slider {
+    justify-content: center;
+  }
+  .pets-galery {
+    margin: 2%;
+  }
+  .arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 840px) {
+  .left-column h2 {
+    font-size: 30px;
+  }
+  .wrapper-footer h3 {
+    font-size: 25px;
+  }
+  .text-donation {
+    width: 70%;
+  }
+}
+
+@media (max-width: 610px) {
+  .wrapper-header {
+    padding: 5% 0;
+  }
+  .left-column {
+    width: 80%;
+  }
+  .right-column {
+    display: none;
+  }
+  .about-text-main p:last-child,
+  .img-footer {
+    display: none;
+  }
+  .contacts-footer {
+    width: 100%;
+  }
+  .contacts-footer h4 {
+    display: inline-block;
+    font-size: 16px;
+  }
+  .wrapper-footer {
+    padding: 2%;
+  }
 }
