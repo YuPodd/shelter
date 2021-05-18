@@ -46,7 +46,8 @@ footer {
 .wrapper-nav,
 .wrapper-header,
 .wrapper-about,
-.wrapper-pets {
+.wrapper-pets,
+.wrapper-help {
   display: flex;
   margin: 0 auto;
   max-width: 1200px;
@@ -257,4 +258,52 @@ button.learn_more {
   border: 1px solid #f1cdb3;
   background: #fafafa;
   margin-left: 7px;
+}
+/* SECTION HELP */
+.wrapper-help h3 {
+    text-align: center;
+    margin-top: 85px;
+    width: 310px;
+    font-size: 35px;
+    letter-spacing: 2.1px;
+    }
+.wrapper-help{
+    flex-direction: column;
+    align-items: center;
+}
+.help-content{
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+/* .help-content-1st-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.help-content-2nd-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+} */
+.help-content-item h4 {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    margin-top: 30px;
+
+}
+
+.help-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 5%;
+}
+.help-content-item img{
+    width: 84px;
+    height: 104px;
 }
