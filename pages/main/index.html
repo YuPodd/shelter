@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shelter</title>
     <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -16,11 +17,15 @@
                 <div class="logo-text">Shelter for pets in Boston</div>
             </div>
             <nav>
-                <ul>
+                <ul class="topnav" id="myTopnav">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
                     <li><a class="current active">About the shelter</a></li>
                     <li><a class="active" href="../pets/index.html">Our pets</a></li>
                     <li><a>Help the shelter</a></li>
                     <li><a>Contacts</a></li>
+                   
                 </ul>
             </nav>
         </div>
@@ -55,7 +60,7 @@
         </section>
         <section class="pets">
             <div class="wrapper-pets">
-                <h3>Our friends who <br>are looking for a house</h3>
+                <h3>Our friends who <br> are looking for a house</h3>
 
                 <div class="pets-slider">
                     <div class="arrow arrow-left"></div>
@@ -173,6 +178,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

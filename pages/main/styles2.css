@@ -63,12 +63,15 @@ h2 {
   font-size: 44px;
   color: #ffffff;
 }
+.topnav .icon {
+  display: none;
+}
 p {
   font-size: 15px;
   line-height: 160%;
 }
-.image-donation img{
-    width: 100%;
+.image-donation img {
+  width: 100%;
 }
 .btn {
   width: fit-content;
@@ -100,6 +103,7 @@ a {
 
 .wrapper-nav {
   justify-content: space-between;
+  align-items: baseline;
 }
 .wrapper-header {
   justify-content: center;
@@ -175,6 +179,7 @@ img#dog-header {
 /* SECTION ABOUT */
 .wrapper-about {
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .about-text {
   display: flex;
@@ -199,7 +204,7 @@ img#dog-header {
 .wrapper-pets h3 {
   text-align: center;
   align-self: center;
-  width: 400px;
+  max-width: 400px;
   font-size: 35px;
   letter-spacing: 2.1px;
 }
@@ -386,7 +391,7 @@ a {
 @media (max-width: 1200px) {
   .wrapper-header,
   .wrapper-nav {
-    margin: 0 5%;
+    margin: 0 3%;
   }
 }
 @media (max-width: 960px) {
@@ -437,4 +442,53 @@ a {
   .wrapper-footer {
     padding: 2%;
   }
+}
+@media screen and (max-width: 600px) {
+    .about-text{
+        max-width: 70%;
+    }
+    nav{
+        width: auto;
+    }
+    .logo-title{
+        padding-top: 30px;
+    }
+  .topnav li{
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: flex;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    flex-direction: column;
+    transition: 0.5s;
+    align-items: baseline;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border: 2px solid #f1cdb3;
+    border-radius: 2px;
+    background: #37302ce3;
+    
+  }
+
+  .topnav.responsive li {
+    display: flex;
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+  .topnav.responsive a.icon{
+    align-self: flex-end;
+    padding: 20px;
+    position: absolute;
+    top: 7%;
+  }
+  
 }
