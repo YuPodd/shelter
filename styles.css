@@ -229,12 +229,12 @@ img#dog-header {
 }
 
 .arrow-left {
-  background: url(../../assets/icons/Arrow_left.svg) no-repeat center center;
+  background: url(./assets/icons/Arrow_left.svg) no-repeat center center;
   margin-left: 10px;
 }
 
 .arrow-right {
-  background: url(../../assets/icons/Arrow_right.svg) no-repeat center center;
+  background: url(./assets/icons/Arrow_right.svg) no-repeat center center;
   margin-right: 10px;
 }
 
